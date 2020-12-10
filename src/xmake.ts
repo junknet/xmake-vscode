@@ -721,7 +721,7 @@ export class XMake implements vscode.Disposable {
          * https://github.com/vadimcn/vscode-lldb
          */
         var extension = null; 
-        if (os.platform() == "darwin" || config.debugConfigType=="codelldb") {
+        if (os.platform() == "darwin" || config.debugConfigType == "codelldb") {
             extension = vscode.extensions.getExtension("vadimcn.vscode-lldb");
         }
         if (!extension) { 
